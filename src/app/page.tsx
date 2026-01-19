@@ -4,6 +4,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, ChevronDown, TrendingUp, Users, Zap, Shield, Globe } from 'lucide-react';
 
+import Link from 'next/link';
+
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
@@ -51,9 +53,11 @@ export default function PitchDeck() {
             We bridge the gap between human intuition and artificial intelligence, creating seamless digital experiences for the next generation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-full font-semibold text-lg transition-all flex items-center justify-center gap-2">
-              View Demo <ArrowRight size={20} />
-            </button>
+            <Link href="/dashboard">
+              <button className="px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-full font-semibold text-lg transition-all flex items-center justify-center gap-2">
+                View Demo <ArrowRight size={20} />
+              </button>
+            </Link>
             <button className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white rounded-full font-semibold text-lg transition-all backdrop-blur-sm border border-white/10">
               Download Deck
             </button>
