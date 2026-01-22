@@ -33,7 +33,7 @@ export default function LoginPage() {
         const data = await res.json();
         setError(data.message || 'Invalid email or password.');
       }
-    } catch (error) {
+    } catch {
       setError('An unexpected error occurred. Please try again.');
     }
   };

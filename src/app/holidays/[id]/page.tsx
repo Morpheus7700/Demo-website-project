@@ -33,7 +33,7 @@ const HolidayDetailPage = () => {
                     } else {
                         setError('Holiday not found');
                     }
-                } catch (err) {
+                } catch {
                     setError('Failed to fetch holiday data.');
                 } finally {
                     setLoading(false);

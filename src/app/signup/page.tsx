@@ -35,7 +35,7 @@ export default function SignupPage() {
         const data = await res.json();
         setError(data.message || 'Failed to create an account.');
       }
-    } catch (error) {
+    } catch {
       setError('An unexpected error occurred. Please try again.');
     }
   };

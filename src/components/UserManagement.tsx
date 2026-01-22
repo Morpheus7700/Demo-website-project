@@ -46,7 +46,7 @@ const UserManagement = () => {
                 const data = await res.json();
                 alert(data.message || 'Failed to update role');
             }
-        } catch (err) {
+        } catch {
             alert('An error occurred. Please try again.');
         }
     };
