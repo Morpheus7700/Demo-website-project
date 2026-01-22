@@ -33,7 +33,7 @@ const TestimonialCard = ({ quote, name, location, avatar }: { quote: string, nam
       height={80}
       className="rounded-full mb-4"
     />
-    <p className="text-foreground text-lg mb-6">"{quote}"</p>
+    <p className="text-foreground text-lg mb-6">&quot;{quote}&quot;</p>
     <div className="font-semibold text-primary">{name}</div>
     <div className="text-gray-500">{location}</div>
   </div>

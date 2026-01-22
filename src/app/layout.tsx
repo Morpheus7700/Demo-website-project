@@ -61,7 +61,7 @@ export default function RootLayout({
 
                 <h3 className="text-2xl font-bold text-primary">Thomas Cook</h3>
 
-                <p className="text-gray-400 mt-4">Don't just book it, Thomas Cook it.</p>
+                <p className="text-gray-400 mt-4">Don&apos;t just book it, Thomas Cook it.</p>
 
               </div>
 

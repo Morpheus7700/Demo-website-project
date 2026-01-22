@@ -30,7 +30,7 @@ export default function ContactPage() {
             Get in Touch
           </h1>
           <p className="text-xl md:text-2xl mt-6 max-w-3xl mx-auto text-gray-600">
-            We'd love to hear from you! Whether you have a question about our holidays, pricing, or anything else, our team is ready to answer all your questions.
+            We&apos;d love to hear from you! Whether you have a question about our holidays, pricing, or anything else, our team is ready to answer all your questions.
           </p>
         </div>
       </section>

@@ -16,7 +16,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   try {
     const db = await openDb();
     const bookings = await db.all('SELECT trip_id FROM bookings WHERE user_id = ?', userId);
-    const tripIds = bookings.map((b: any) => b.trip_id);
+    const tripIds = bookings.map((b: { trip_id: number | string }) => b.trip_id);
 
     if (tripIds.length === 0) {
       return res.status(200).json([]);

@@ -81,7 +81,7 @@ export default function AboutPage() {
       <section className="bg-primary text-white text-center py-20 md:py-24">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-bold">Ready for an Adventure?</h2>
-          <p className="text-xl mt-4 mb-10">Let's plan your next unforgettable journey together.</p>
+          <p className="text-xl mt-4 mb-10">Let&apos;s plan your next unforgettable journey together.</p>
           <CTAButton href="/contact">Get in Touch</CTAButton>
         </div>
       </section>
