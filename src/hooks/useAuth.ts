@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 
 interface User {
   userId: string;
+  name: string;
   role: 'ADMIN' | 'USER';
 }
 
