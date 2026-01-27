@@ -20,7 +20,7 @@ const HolidayDetailPage = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
     const params = useParams();
-    const { id } = params;
+    const id = params?.id;
 
     useEffect(() => {
         if (id) {
