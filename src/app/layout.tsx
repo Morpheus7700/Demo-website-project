@@ -19,9 +19,9 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "600", "700
 
 export const metadata: Metadata = {
 
-  title: "Thomas Cook",
+  title: "Escapade On Wheels | Best Travel Agent in Kolkata",
 
-  description: "Your next adventure is just a click away. Unforgettable journeys, meticulously planned.",
+  description: "Plan your dream Domestic and International Tour with Escapade On Wheels. Discover exciting destinations and personalized travel experiences.",
 
 };
 
@@ -51,7 +51,7 @@ export default function RootLayout({
 
         </main>
 
-        <footer className="bg-gray-800 text-white">
+        <footer className="bg-gray-900 text-white">
 
           <div className="container mx-auto px-6 py-16">
 
@@ -59,9 +59,9 @@ export default function RootLayout({
 
               <div>
 
-                <h3 className="text-2xl font-bold text-primary">Thomas Cook</h3>
+                <h3 className="text-2xl font-bold text-primary">EscapadeOnWheels</h3>
 
-                <p className="text-gray-400 mt-4">Don&apos;t just book it, Thomas Cook it.</p>
+                <p className="text-gray-400 mt-4">Discover the best travel agent in Kolkata for domestic and international tours.</p>
 
               </div>
 
@@ -71,11 +71,11 @@ export default function RootLayout({
 
                 <ul className="mt-4 space-y-2">
 
-                  <li><Link href="/tours" className="text-gray-400 hover:text-primary transition-colors">Holidays</Link></li>
+                  <li><Link href="/holidays/domestic" className="text-gray-400 hover:text-primary transition-colors">Domestic Tours</Link></li>
 
-                  <li><Link href="/about" className="text-gray-400 hover:text-primary transition-colors">About Us</Link></li>
+                  <li><Link href="/holidays/international" className="text-gray-400 hover:text-primary transition-colors">International Tours</Link></li>
 
-                  <li><Link href="/contact" className="text-gray-400 hover:text-primary transition-colors">Contact</Link></li>
+                  <li><Link href="/contact" className="text-gray-400 hover:text-primary transition-colors">Contact Us</Link></li>
 
                   <li><Link href="/login" className="text-gray-400 hover:text-primary transition-colors">Login</Link></li>
 
@@ -89,9 +89,11 @@ export default function RootLayout({
 
                 <ul className="mt-4 space-y-2 text-gray-400">
 
-                  <li>Email: support@thomascook.com</li>
+                  <li className="flex items-start"><span className="mr-2">📍</span> P-143, BLOCK A, LAKE TOWN, KOLKATA - 700 089</li>
 
-                  <li>Phone: +1 (555) 123-4567</li>
+                  <li className="flex items-center"><span className="mr-2">📧</span> <a href="mailto:escapadeonwheels@gmail.com" className="hover:text-primary">escapadeonwheels@gmail.com</a></li>
+
+                  <li className="flex items-center"><span className="mr-2">📞</span> <a href="tel:+918240630431" className="hover:text-primary">+91 82406 30431</a></li>
 
                 </ul>
 
@@ -127,9 +129,9 @@ export default function RootLayout({
 
             </div>
 
-            <div className="mt-16 border-t border-gray-700 pt-8 text-center text-gray-500">
+            <div className="mt-16 border-t border-gray-800 pt-8 text-center text-gray-500">
 
-              <p>&copy; {new Date().getFullYear()} Thomas Cook. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} Escapade On Wheels. All rights reserved.</p>
 
             </div>
 

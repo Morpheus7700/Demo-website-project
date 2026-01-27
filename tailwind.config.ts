@@ -11,9 +11,9 @@ const config: Config = {
     extend: {
       colors: {
         background: '#ffffff',
-        foreground: '#333333',
-        primary: '#ff6b6b',
-        secondary: '#4ecdc4',
+        foreground: '#1a1a1a',
+        primary: '#FF6B00', // Lively Orange from logo/site
+        secondary: '#003B95', // Deep Blue from logo/site
         accent: '#f9d56e',
       },
       fontFamily: {
