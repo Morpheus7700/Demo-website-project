@@ -1,23 +1,26 @@
-# Travel Platform & Pitch Deck ✈️
+# Demo-website-project
 
-A full-stack travel booking and administration platform built with **Next.js**. Features a comprehensive user management system, secure authentication, and an SQLite database for seamless data persistence.
+> A full-stack travel-booking website with user authentication and an admin dashboard, built on Next.js 15.
 
-## 🌟 Key Features
-- **Secure Authentication:** JWT-based login, signup, and session management using `bcryptjs` and `jose`.
-- **Admin Dashboard:** Role-based access control allowing administrators to manage users and view metrics.
-- **Trip Management:** Full CRUD capabilities for domestic and international holiday packages.
-- **Modern UI:** Responsive design with Tailwind CSS and custom SVG iconography.
-- **Robust Database:** SQLite integration for localized, fast data storage.
+A Next.js application for browsing and booking holiday packages, backed by a local SQLite database and JWT-based auth. Includes a role-gated admin area for managing users and trips.
 
-## 💻 Tech Stack
-- **Framework:** Next.js 15 (App Router)
+## Features
+- JWT authentication (login, signup, sessions) using `bcryptjs`, `jose`, and `jsonwebtoken`
+- Role-based admin dashboard for managing users and viewing metrics
+- CRUD for domestic and international holiday packages
+- SQLite persistence with scripted setup and migration steps
+- Responsive UI built with Tailwind CSS
+
+## Tech Stack
+- **Framework:** Next.js 15 (App Router), React 19
 - **Language:** TypeScript
-- **Authentication:** JSON Web Tokens (JWT), bcryptjs
-- **Database:** SQLite3
+- **Auth:** JWT (`jose` / `jsonwebtoken`), `bcryptjs`
+- **Database:** SQLite (`sqlite`, `sqlite3`)
 
-## ⚙️ Quick Start
+## Getting Started
 ```bash
 npm install
-npm run db:setup
+npm run db:setup      # create the database and tables
+npm run db:create-trips
 npm run dev
 ```
