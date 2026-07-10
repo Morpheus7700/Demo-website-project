@@ -1,4 +1,4 @@
-# Demo-website-project
+﻿# Next.js Travel Booking Platform
 
 > A full-stack travel-booking website with user authentication and an admin dashboard, built on Next.js 15.
 
